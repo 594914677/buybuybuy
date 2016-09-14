@@ -29,9 +29,13 @@ export default class Mine extends Component {
                             <Image source={{uri:'icon_homepage_message'}} style={{width:25,height:25}}/>
                         </TouchableOpacity>
                     </View>
-                    <View style={{height:64,backgroundColor:'rgba(255,96,0,1.0)'}}>
-                        <Text>请点击登录</Text>
-                    </View>
+                    <TouchableOpacity onPress={()=>{alert('请登录')}}>
+                        <View
+                            style={{flexDirection:'row',alignItems: 'center',paddingBottom:15,backgroundColor:'rgba(255,96,0,1.0)'}}>
+                            <Image source={{uri:'see'}} style={{width:50,height:50,borderRadius:25,marginLeft:20}}/>
+                            <Text style={{marginLeft:20,color:"#fff",fontWeight:'bold',fontSize:15}}>请点击登录</Text>
+                        </View>
+                    </TouchableOpacity>
                     <View style={{marginTop:10}}>
                         <Cell title="我要合作" imageUri="collect" rightText="查看全部订单"/>
                     </View>
