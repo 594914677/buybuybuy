@@ -14,12 +14,12 @@ import {
     View
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
-import Home from '../Components/Home/Home';
-import Shop from '../Components/Shop/Shop';
-import Mine from '../Components/Mine/Mine';
-import More from '../Components/More/More';
+import Home from '../Pages/Home/Home';
+import Shop from '../Pages/Shop/Shop';
+import Mine from '../Pages/Mine/Mine';
+import More from '../Pages/More/More';
 
-import Navigator from '../common/navigator'
+import Navigator from '../Common/Navigator'
 
 export default class Main extends Component {
 
